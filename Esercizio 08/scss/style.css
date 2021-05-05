@@ -1,0 +1,48 @@
+body {
+  font-family: "Rubik", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.cta {
+  color: #ffffff !important;
+  background-color: #5cc871;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 0px;
+}
+
+.cta:hover {
+  background-color: #308e42;
+}
+
+.cta:active, .cta:focus {
+  background: dasaturate(#5cc871, 20%);
+}
+
+nav .cta {
+  padding: 7.2px 15px;
+}
+
+.slogan .primary {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #5cc871;
+}
+
+.slogan .secondary {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #3e3c53;
+}
+
+.slogan p {
+  font-family: 2rem;
+}
+
+.slogan .cta {
+  margin-top: 1.5rem;
+  padding: 7px 30px;
+}
+/*# sourceMappingURL=style.css.map */

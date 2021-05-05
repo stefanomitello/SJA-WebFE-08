@@ -1,0 +1,75 @@
+$primary: #5cc871;
+$secondary: #3e3c53;
+$white: #ffffff;
+
+$h1: 4rem;
+$h2: 2rem;
+
+$font-family: 'Rubik', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+body {
+font-family: $font-family;
+
+}
+
+@mixin cta($text:$white, $bg:$primary) {
+    
+    color: $text !important;
+    background-color: $bg;
+
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+
+    border: 0px;
+
+    &:hover {
+        background-color: darken($primary, 20%);
+    }
+
+    &:active, &:focus {
+        background: dasaturate($primary, 20%);
+    }
+}
+
+@mixin slogan {
+    font-size: $h1;
+    font-weight: 600;
+}
+
+.cta {
+    @include cta;
+}
+
+nav {
+    .cta {
+        padding: 7.2px 15px;
+    }
+}
+
+.slogan {
+
+    .primary {
+        @include slogan;
+        color: $primary;
+    }
+
+    .secondary {
+        @include slogan;
+        color: $secondary;
+    }
+
+    p {
+        font-family: $h2;
+    }
+
+    .cta {
+        margin-top: 1.5rem;
+        padding: 7px 30px;
+    }
+}
+
+
+
