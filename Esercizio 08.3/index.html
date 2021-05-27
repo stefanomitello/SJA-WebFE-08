@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="tags">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="container">
+
+
+
+        <header>
+
+            <span>SASS</span>
+
+            <nav id="menu" role="navigation">
+                <ul>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li><a href="">Item 3</a></li>
+                    <li><a href="">Item 4</a></li>
+                    <li><a href="">Item 5</a></li>
+                    <li><a href="" class="cta">Item 5</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-link">
+                <div class="icon"></div>
+            </div>
+
+        </header>
+
+
+        <section id="hero">
+            <div>
+                <h1><span class="color-primary">They are coming</span></br><span class="color-secondary">Be prepared</span></h1>
+                <p>Sign up now to join the list.</p>
+                <a href="#" class="cta">Sign up</a>
+            </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/briancodex/sass-website-v1/fd7a681b6a77f3642cac4b0cc11e8ed8d77f6390/images/img-2.svg">
+            </div>
+        </section>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(document).ready(function() {
+            var $menu = $("#menu"),
+            $menulink = $(".menu-link");
+            
+            $menulink.click(function() {
+                $menulink.toggleClass("open");
+                $menu.toggleClass("open");
+                return false;
+            });
+            });
+        </script>
+
+
+    </body>
+</html>

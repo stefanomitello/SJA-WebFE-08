@@ -1,0 +1,42 @@
+
+@media (min-width: $md) {
+
+  
+
+
+
+
+  div.menu-link {
+      display: none;
+  }
+
+  nav[role=navigation] {
+      max-height: none;
+      margin: 0px;
+  }
+
+  nav[role=navigation] ul {
+      margin: 0 0 0 -0.25em;
+      border: 0;
+      text-align: right;
+  }
+
+  nav[role=navigation] li {
+      display: inline-block;
+      margin: 0 0.25em;
+  }
+
+  nav[role=navigation] li a {
+      border: 0;
+  }
+
+
+
+}
+
+
+@media (min-width: $lg) {
+  .container {
+    width: $container;
+  }
+}

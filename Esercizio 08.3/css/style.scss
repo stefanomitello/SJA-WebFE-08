@@ -1,0 +1,69 @@
+@import "partials/reboot", "partials/variables", "partials/button", "partials/navbar";
+
+body {
+    font-family: $font;
+    color: $secondary;
+    font-weight: 700;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.color-primary {
+    color: $primary;
+}
+
+
+.color-secondary {
+    color: $secondary;
+}
+
+
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+.cta {
+    @include cta;
+}
+
+
+#hero {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: unset;
+
+
+    @media (min-width: $md) {
+        flex-direction: row;
+        height: 80vh;
+    }
+
+    div {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+            padding: 40px;
+        }
+    }
+
+}
+
+
+
+
+@import "partials/media-desktop"

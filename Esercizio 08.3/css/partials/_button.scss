@@ -1,0 +1,17 @@
+
+@mixin cta {
+    background: $primary;
+    border-radius: 4px;
+    color: $light;
+    border: 0;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    &.hover {
+        background-color: darken($primary, 20%);
+    }
+    
+    &:active, &:focus {
+        background: dasaturate($primary, 20%);
+    }
+}
